@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sejuk Dekorasi - Produk</title>
+  <link rel="stylesheet" href="asset/style.css" />
+</head>
+<body>
+<header class="topbar">
+
+  <!-- BAR ATAS: LOGO -->
+  <div class="top-row">
+    <div class="brand">
+      <img src="asset/logo (1).png" style="
+      width:20px;
+      height:20px;
+      border-radius:50%;
+      object-fit:cover;" alt="Sejuk Dekorasi">
+      <span>Sejuk Dekorasi</span>
+    </div>
+  </div>
+
+  <!-- MENU BAR (DI BAWAH LOGO) -->
+  <nav class="menu-bar">
+  <a href="index.html">Beranda</a>
+  <a href="index/produk.html" class="active">Produk</a>
+  <a href="index/kontak.html">Kontak</a>
+  <a href="index/tentang.html">Tentang</a>
+</nav>
+
+
+</header>
+  <!-- SIDEBAR -->
+  
+
+  <main class="container">
+   <H1>ㅤ</H1>
+  <h1>Produk</h1>
+
+    <div class="controls">
+      <input id="searchBox" class="control-input" placeholder="Cari produk (nama atau kode)..." />
+
+      <select id="categoryFilter" class="control-select">
+        <option value="">Semua Kategori</option>
+        <option value="pernikahan">Pernikahan</option>
+         <option value="aqiqah">Aqiqah</option>
+         <option value="akad">Akad Nikah</option>
+         <option value="Lamaran">Lamaran</option>
+          <option value="khitan">Khitan</option>
+        <option value="ultah">Ulang Tahun</option>
+        <option value="tasyakuran">Tasyakuran</option>
+        <option value="lainnya">Lainnya</option>
+      </select>
+
+
+      <div class="controls-actions">
+        <button id="clearFilters" class="btn ghost">Reset</button>
+      </div>
+    </div>
+
+    <div id="produkGrid" class="grid">
+      <!-- diisi oleh app.js -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <small>© 2025 Sejuk Dekorasi — rrq onik hann#1945</small>
+  </footer>
+
+  <script src="sjs/app.js"></script>
+  <script>
+  
+
+    // DOM references
+    const searchBox = document.getElementById('searchBox');
+    const categoryFilter = document.getElementById('categoryFilter');
+    const clearBtn = document.getElementById('clearFilters');
+
+    // bind events
+    searchBox.addEventListener('input', ()=> renderProducts());
+    categoryFilter.addEventListener('change', ()=> renderProducts());
+
+    clearBtn.addEventListener('click', ()=>{
+      searchBox.value = '';
+      categoryFilter.value = '';
+      renderProducts();
+    });
+
+    // prefill search if ada ?search=...
+    const urlQ = new URLSearchParams(window.location.search).get('search');
+    if(urlQ){
+      searchBox.value = urlQ;
+    }
+
+    // initial render
+    document.addEventListener('DOMContentLoaded', ()=> {
+      renderProducts();
+    });
+  </script>
+</body>
+</html>

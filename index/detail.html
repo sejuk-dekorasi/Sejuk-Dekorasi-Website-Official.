@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Detail Produk - Sejuk Dekorasi</title>
+  <link rel="stylesheet" href="../asset/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css">
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+
+</head>
+<body>
+
+  <!-- TOPBAR -->
+<header class="topbar">
+
+  <!-- BAR ATAS: LOGO -->
+  <div class="top-row">
+    <div class="brand">
+      <img src="../asset/logo (1).png" style="
+      width:20px;
+      height:20px;
+      border-radius:50%;
+      object-fit:cover;" alt="Sejuk Dekorasi">
+      <span>Sejuk Dekorasi</span>
+    </div>
+  </div>
+
+  <!-- MENU BAR (DI BAWAH LOGO) -->
+  <nav class="menu-bar">
+  <a href="../index.html">Beranda</a>
+  <a href="../produk.html">Produk</a>
+  <a href="kontak.html">Kontak</a>
+  <a href="tentang.html">Tentang</a>
+</nav>
+
+
+</header>
+  <!-- SIDEBAR -->
+  
+
+  <main class="container">
+ <H1>ㅤ</H1>
+  <h1>Detail Produk</h1>
+
+    <!-- INI TEMPAT DETAIL PRODUK -->
+    <div id="detailContainer"></div>
+
+  </main>
+  <footer class="footer">
+    <small>© 2025 Sejuk Dekorasi — rrq onik hann#1945</small>
+  </footer>
+
+  <script src="../js/app.js"></script>
+
+  <script>
+  
+
+    // LOAD DETAIL PRODUK
+    document.addEventListener("DOMContentLoaded", ()=> {
+      window.loadDetail();  // <-- otomatis memanggil renderDetail()
+    });
+  </script>
+
+</body>
+</html>
