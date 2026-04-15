@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sejuk Dekorasi - Produk</title>
+  <link rel="stylesheet" href="asset/style.css" />
+</head>
+<body>
+<header class="topbar">
+<div id="sidebar" class="sidebar">
+  <a href="index.html">Beranda</a>
+  <a href="produk.html">Produk</a>
+  <a href="index/kontak.html">Kontak</a>
+  <a href="index/tentang.html">Tentang</a>
+</div>
+  <button class="burger" onclick="toggleMenu()">☰</button>
+
+  <div class="top-row">
+    <div class="brand">
+      <img src="asset/logo (1).png">
+      <span>Sejuk Dekorasi</span>
+    </div>
+  </div>
+
+</header>
+  <!-- SIDEBAR -->
+  
+
+  <main class="container">
+   <H1>ㅤ</H1>
+  <h1>Produk</h1>
+
+    <div class="controls">
+      <input id="searchBox" class="control-input" placeholder="Cari produk (nama atau kode)..." />
+
+      <select id="categoryFilter" class="control-select">
+        <option value="">Semua Kategori</option>
+        <option value="pernikahan">Pernikahan</option>
+         <option value="aqiqah">Aqiqah</option>
+         <option value="akad">Akad Nikah</option>
+         <option value="Lamaran">Lamaran</option>
+          <option value="khitan">Khitan</option>
+        <option value="ultah">Ulang Tahun</option>
+        <option value="tasyakuran">Tasyakuran</option>
+        <option value="lainnya">Lainnya</option>
+      </select>
+
+
+      <div class="controls-actions">
+        <button id="clearFilters" class="btn ghost">Reset</button>
+      </div>
+    </div>
+
+    <div id="produkGrid" class="grid">
+      <!-- diisi oleh app.js -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <small>© 2025 Sejuk Dekorasi — rrq onik hann#1945</small>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+  
+
+    // DOM references
+    const searchBox = document.getElementById('searchBox');
+    const categoryFilter = document.getElementById('categoryFilter');
+    const clearBtn = document.getElementById('clearFilters');
+
+    // bind events
+    searchBox.addEventListener('input', ()=> renderProducts());
+    categoryFilter.addEventListener('change', ()=> renderProducts());
+
+    clearBtn.addEventListener('click', ()=>{
+      searchBox.value = '';
+      categoryFilter.value = '';
+      renderProducts();
+    });
+
+    // prefill search if ada ?search=...
+    const urlQ = new URLSearchParams(window.location.search).get('search');
+    if(urlQ){
+      searchBox.value = urlQ;
+    }
+
+    // initial render
+    document.addEventListener('DOMContentLoaded', ()=> {
+      renderProducts();
+    });
+    function toggleMenu(){
+  document.getElementById("sidebar").classList.toggle("active");}
+  </script>
+</body>
+<nav class="bottom-nav">
+  <a href="index.html" class="nav-item">
+    <span>🏠</span>
+    <small>Beranda</small>
+  </a>
+
+  <a href="produk.html" class="nav-item active">
+    <span>🛍</span>
+    <small>Produk</small>
+  </a>
+
+  <a href="index/kontak.html" class="nav-item">
+    <span>📞</span>
+    <small>Kontak</small>
+  </a>
+
+  <a href="index/tentang.html" class="nav-item">
+    <span>ℹ️</span>
+    <small>Tentang</small>
+  </a>
+</nav>
+</html>
