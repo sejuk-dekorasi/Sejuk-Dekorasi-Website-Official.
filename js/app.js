@@ -695,7 +695,7 @@ function loadDetail() {
       <label class="item-box">
         <input type="checkbox" id="backdropCheck">
         Kain Cover Backdrop – Rp 20.000 / meter
-      </label><br>
+      </label>
 
       <div id="meterBox" style="display:none">
         <input type="number" id="meterBackdrop" min="1" placeholder="meter">
