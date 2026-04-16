@@ -702,7 +702,7 @@ function loadDetail() {
         <div id="hargaBackdrop"></div>
       </div>
 
-      <label class="item-box">
+      <br><label class="item-box">
         <input type="checkbox" value="Plafon Pelaminan">
         Plafon Pelaminan (harga tergantung model)
       </label>
