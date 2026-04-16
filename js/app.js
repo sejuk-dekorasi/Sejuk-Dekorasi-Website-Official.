@@ -680,19 +680,19 @@ function loadDetail() {
 <label class="item-box">
         <input type="checkbox" data-harga="0" value="Kembar Mayang">
        Jika jarak >3km tambah biaya transportasi
-      </label><br>
+      </label>
 
-      <label class="item-box">
+     <br> <label class="item-box">
         <input type="checkbox" data-harga="250000" value="Kembar Mayang">
         Kembar Mayang – Rp 250.000
-      </label><br>
+      </label>
 
-      <label class="item-box">
+     <br> <label class="item-box">
         <input type="checkbox" data-harga="150000" value="Meja & Kursi Ijab">
         Meja & Kursi Ijab – Rp 150.000
-      </label><br>
+      </label>
 
-      <label class="item-box">
+     <br> <label class="item-box">
         <input type="checkbox" id="backdropCheck">
         Kain Cover Backdrop – Rp 20.000 / meter
       </label>
