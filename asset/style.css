@@ -43,13 +43,6 @@ main{
 .right-actions{margin-left:auto; display:flex; gap:10px; align-items:center}
 .link{color:rgba(255,255,255,0.9); font-size:14px}
 
-.burger{
-  font-size:22px;
-  background:none;
-  border:none;
-  color:var(--accent);
-  cursor:pointer;
-}
 
 /* SIDEBAR */
 .sidebar{
@@ -1544,11 +1537,128 @@ color: black;
   border-radius: 50%;
   padding: 6px 10px;
 }
+/* =====================================
+   SIDEBAR KANAN MODERN
+===================================== */
+
+.sidebar{
+  position: fixed !important;
+  top: 0 !important;
+
+  left: auto !important;
+  right: -300px !important;
+
+  width: 280px;
+  height: 100vh;
+
+  padding: 80px 15px 20px;
+
+  background: rgba(15,15,25,.88);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border-left: 1px solid rgba(255,255,255,.1);
+  border-right: none !important;
+
+  transition: right .35s ease !important;
+
+  z-index: 99999;
+}
+
+.sidebar.active{
+  left: auto !important;
+  right: 0 !important;
+
+  box-shadow:
+    -10px 0 30px rgba(0,0,0,.4),
+    0 0 40px rgba(168,85,247,.25);
+}
+
+/* LINK MENU */
+
+.sidebar a{
+  display:block;
+
+  padding:14px 16px;
+  margin-bottom:10px;
+
+  border-radius:14px;
+
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+
+  background:rgba(255,255,255,.05);
+
+  transition:.25s;
+}
+
+.sidebar a:hover{
+  background:rgba(255,255,255,.15);
+  transform:translateX(-6px);
+}
+
+/* BURGER */
+
 .burger{
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
+  position:absolute;
+  right:15px;
+  top:50%;
+  transform:translateY(-50%);
+
+  width:46px;
+  height:46px;
+
+  border:none;
+  border-radius:14px;
+
+  background:rgba(255,255,255,.15);
+
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+
+  color:#fff;
+  font-size:24px;
+  font-weight:bold;
+
+  cursor:pointer;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  transition:.25s ease;
+
+  box-shadow:
+    0 4px 15px rgba(0,0,0,.25),
+    inset 0 1px 1px rgba(255,255,255,.2);
+}
+
+.burger:hover{
+  transform:translateY(-50%) scale(1.08);
+  background:rgba(255,255,255,.25);
+}
+
+.burger:active{
+  transform:translateY(-50%) scale(.95);
+}
+
+/* MOBILE */
+
+@media (max-width:700px){
+
+  .sidebar{
+    width:100% !important;
+
+    left:auto !important;
+    right:-100% !important;
+  }
+
+  .sidebar.active{
+    left:auto !important;
+    right:0 !important;
+  }
 }
 main{
   padding-bottom: 80px;
