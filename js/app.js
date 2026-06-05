@@ -190,7 +190,7 @@ const DEFAULT_PRODUCTS = [
     kode: "SJ00",
     nama: "Custom",
     kategori: "lainnya",
-    harga: "0",
+    harga: "000",
     img: "asset/custom.png",
     deskripsi: `
 <b>Anda dapat memberikan gambar dekorasi kepada admin</b><br>
@@ -207,7 +207,7 @@ const DEFAULT_PRODUCTS = [
     kode: "SJ01",
     nama: "Dekorasi Pernikahan",
     kategori: "pernikahan",
-    harga: "0",
+    harga: "3500000",
     img: "asset/sj01.png",
     deskripsi: `
 <b>ITEM :</b>
@@ -246,7 +246,7 @@ di RUMAH<br><br>
     kode: "SJ02",
     nama: "Dekorasi Pernikahan",
     kategori: "pernikahan",
-    harga: "0",
+    harga: "3500000",
     img: "asset/sj02.png",
     deskripsi: `
 <b>ITEM :</b>
@@ -280,7 +280,7 @@ di RUMAH<br><br>
     kode: "SJ03",
     nama: "Dekorasi Pernikahan",
     kategori: "pernikahan",
-    harga: "0",
+    harga: "3500000",
     img: "asset/sj03.png",
     deskripsi: `
 <b>ITEM :</b>
@@ -314,41 +314,7 @@ di RUMAH<br><br>
     kode: "SJ04",
     nama: "Dekorasi Pernikahan",
     kategori: "pernikahan",
-    harga: "0",
-    img: "asset/sj04.png",
-    deskripsi: `
-<b>ITEM :</b>
-<ol>
-  <li>Backdrop pelaminan 6m</li>
-  <li>Set kursi pelaminan</li>
-  <li>Welcome gate</li>
-  <li>Welcome sign</li>
-  <li>Mini garden</li>
-  <li>Standing flower</li>
-  <li>Karpet jalan</li>
-  <li>Lighting standar dekor</li>
-  <li>Fresh flower + artificial</li>
-</ol>
-
-<b><strong>FREE</strong> :</b>
-<ol>
-  <li>Kain backdrop pelaminan</li>
-  <li>Karpet pelaminan</li>
-  <li>Kain cover meja kado</li>
-</ol>
-<b>NOTED :<b>
-<ol>
-<li>Pemesanan wajib DP.
-<li>Pembatalan pemesanan sepihak dari customer,dp dianggap hangus.</li>
-<li>Bersedia di up di socialmedia.</li>
-</ol>`
-  },
-  {
-    id: "SJ04",
-    kode: "SJ04",
-    nama: "Dekorasi Pernikahan",
-    kategori: "pernikahan",
-    harga: "0",
+    harga: "3500000",
     img: "asset/sj04.png",
     deskripsi: `
 <b>ITEM :</b>
@@ -382,7 +348,7 @@ di RUMAH<br><br>
     kode: "SJ05",
     nama: "Dekorasi Pernikahan",
     kategori: "pernikahan",
-    harga: "0",
+    harga: "4000000",
     img: "asset/sj05.png",
     deskripsi: `
 <b>ITEM :</b>
@@ -416,7 +382,7 @@ di RUMAH<br><br>
     kode: "SJ06",
     nama: "Dekorasi Pernikahan",
     kategori: "pernikahan",
-    harga: "0",
+    harga: "4000000",
     img: "asset/sj06.png",
     deskripsi: `
 <b>ITEM :</b>
@@ -450,7 +416,7 @@ di RUMAH<br><br>
     kode: "SJ07",
     nama: "Dekorasi Pernikahan",
     kategori: "pernikahan",
-    harga: "0",
+    harga: "4000000",
     img: "asset/sj07.png",
     deskripsi: `
 <b>ITEM :</b>
@@ -484,7 +450,7 @@ di RUMAH<br><br>
     kode: "SJ08",
     nama: "Dekorasi Pernikahan",
     kategori: "pernikahan",
-    harga: "0",
+    harga: "5000000",
     img: "asset/sj08.png",
     deskripsi: `
 <b>ITEM :</b>
@@ -519,8 +485,148 @@ di RUMAH<br><br>
     kode: "SJ09",
     nama: "Dekorasi Pernikahan",
     kategori: "pernikahan",
-    harga: "0",
+    harga: "2500000",
     img: "asset/sj09.jpeg",
+    deskripsi: `
+<b>ITEM :</b>
+<ol>
+  <li>Backdrop pelaminan 6m</li>
+  <li>Set kursi pelaminan</li>
+  <li>Welcome gate</li>
+  <li>Welcome sign</li>
+  <li>Mini garden</li>
+  <li>Standing flower</li>
+  <li>Karpet jalan</li>
+  <li>Lighting standar dekor</li>
+  <li>Fresh flower + artificial</li>
+</ol>
+
+<b><strong>FREE</strong> :</b>
+<ol>
+  <li>Kain backdrop pelaminan</li>
+  <li>Karpet pelaminan</li>
+  <li>Kain cover meja kado</li>
+</ol>
+<b>NOTED :<b>
+<ol>
+<li>Pemesanan wajib DP.
+<li>Pembatalan pemesanan sepihak dari customer,dp dianggap hangus.</li>
+<li>Bersedia di up di socialmedia.</li>
+
+</ol>`
+  },
+   {
+    id: "SJ10",
+    kode: "SJ10",
+    nama: "Dekorasi Pernikahan",
+    kategori: "pernikahan",
+    harga: "2500000",
+    img: "asset/sj10.png",
+    deskripsi: `
+<b>ITEM :</b>
+<ol>
+  <li>Backdrop pelaminan 6m</li>
+  <li>Set kursi pelaminan</li>
+  <li>Welcome gate</li>
+  <li>Welcome sign</li>
+  <li>Mini garden</li>
+  <li>Standing flower</li>
+  <li>Karpet jalan</li>
+  <li>Lighting standar dekor</li>
+  <li>Fresh flower + artificial</li>
+</ol>
+
+<b><strong>FREE</strong> :</b>
+<ol>
+  <li>Kain backdrop pelaminan</li>
+  <li>Karpet pelaminan</li>
+  <li>Kain cover meja kado</li>
+</ol>
+<b>NOTED :<b>
+<ol>
+<li>Pemesanan wajib DP.
+<li>Pembatalan pemesanan sepihak dari customer,dp dianggap hangus.</li>
+<li>Bersedia di up di socialmedia.</li>
+
+</ol>`
+  },
+  {
+    id: "SJ11",
+    kode: "SJ11",
+    nama: "Dekorasi Pernikahan",
+    kategori: "pernikahan",
+    harga: "3000000",
+    img: "asset/sj11.png",
+    deskripsi: `
+<b>ITEM :</b>
+<ol>
+  <li>Backdrop pelaminan 6m</li>
+  <li>Set kursi pelaminan</li>
+  <li>Welcome gate</li>
+  <li>Welcome sign</li>
+  <li>Mini garden</li>
+  <li>Standing flower</li>
+  <li>Karpet jalan</li>
+  <li>Lighting standar dekor</li>
+  <li>Fresh flower + artificial</li>
+</ol>
+
+<b><strong>FREE</strong> :</b>
+<ol>
+  <li>Kain backdrop pelaminan</li>
+  <li>Karpet pelaminan</li>
+  <li>Kain cover meja kado</li>
+</ol>
+<b>NOTED :<b>
+<ol>
+<li>Pemesanan wajib DP.
+<li>Pembatalan pemesanan sepihak dari customer,dp dianggap hangus.</li>
+<li>Bersedia di up di socialmedia.</li>
+
+</ol>`
+  },
+  {
+    id: "SJ12",
+    kode: "SJ12",
+    nama: "Dekorasi Pernikahan",
+    kategori: "pernikahan",
+    harga: "3500000",
+    img: "asset/sj12.png",
+    deskripsi: `
+<b>ITEM :</b>
+<ol>
+  <li>Backdrop pelaminan 6m</li>
+  <li>Set kursi pelaminan</li>
+  <li>Welcome gate</li>
+  <li>Welcome sign</li>
+  <li>Mini garden</li>
+  <li>Standing flower</li>
+  <li>Karpet jalan</li>
+  <li>Lighting standar dekor</li>
+  <li>Fresh flower + artificial</li>
+</ol>
+
+<b><strong>FREE</strong> :</b>
+<ol>
+  <li>Kain backdrop pelaminan</li>
+  <li>Karpet pelaminan</li>
+  <li>Kain cover meja kado</li>
+</ol>
+<b>NOTED :<b>
+<ol>
+<li>Pemesanan wajib DP.
+<li>Pembatalan pemesanan sepihak dari customer,dp dianggap hangus.</li>
+<li>Bersedia di up di socialmedia.</li>
+
+</ol>`
+  },
+  {
+    id: "SJ13",
+    kode: "SJ13",
+    nama: "Dekorasi Pernikahan",
+    kategori: "pernikahan",
+    harga: "4500000",
+    img: "asset/sj13.png",
     deskripsi: `
 <b>ITEM :</b>
 <ol>
@@ -587,7 +693,7 @@ di RUMAH<br><br>
     kode: "SJL03",
     nama: "Dekorasi Lamaran",
     kategori: "lamaran",
-    harga: "0",
+    harga: "1000000",
     img: "asset/sjl03.jpeg",
     deskripsi: `
 <b>NOTED :<b>
@@ -603,7 +709,7 @@ di RUMAH<br><br>
     kode: "SJL04",
     nama: "Dekorasi Lamaran",
     kategori: "lamaran",
-    harga: "0",
+    harga: "1000000",
     img: "asset/sjl04.jpeg",
     deskripsi: `
 <b>NOTED :<b>
@@ -619,7 +725,7 @@ di RUMAH<br><br>
     kode: "SJL05",
     nama: "Dekorasi Lamaran",
     kategori: "lamaran",
-    harga: "0",
+    harga: "500000",
     img: "asset/sjl05.jpeg",
     deskripsi: `
 <b>NOTED :<b>
@@ -635,7 +741,7 @@ di RUMAH<br><br>
     kode: "SJL06",
     nama: "Dekorasi Lamaran",
     kategori: "lamaran",
-    harga: "0",
+    harga: "700000",
     img: "asset/sjl06.jpeg",
     deskripsi: `
 <b>NOTED :<b>
@@ -651,7 +757,7 @@ di RUMAH<br><br>
     kode: "SJL07",
     nama: "Dekorasi Lamaran",
     kategori: "lamaran",
-    harga: "0",
+    harga: "800000",
     img: "asset/sjl07.jpeg",
     deskripsi: `
 <b>NOTED :<b>
@@ -667,7 +773,7 @@ di RUMAH<br><br>
     kode: "SJL08",
     nama: "Dekorasi Lamaran",
     kategori: "lamaran",
-    harga: "0",
+    harga: "700000",
     img: "asset/sjl08.jpeg",
     deskripsi: `
 <b>NOTED :<b>
@@ -683,8 +789,40 @@ di RUMAH<br><br>
     kode: "SJL09",
     nama: "Dekorasi Lamaran",
     kategori: "lamaran",
-    harga: "0",
+    harga: "750000",
     img: "asset/sjl09.jpeg",
+    deskripsi: `
+<b>NOTED :<b>
+<ol>
+<li>Pemesanan wajib DP.
+<li>Pembatalan pemesanan sepihak dari customer,dp dianggap hangus.</li>
+<li>Bersedia di up di socialmedia.</li>
+<li>Jika jarak >3km tambahan biaya transportasi.</li>
+</ol>`
+  },
+  {
+    id: "SJL10",
+    kode: "SJL10",
+    nama: "Dekorasi Lamaran",
+    kategori: "lamaran",
+    harga: "800000",
+    img: "asset/sjl10.png",
+    deskripsi: `
+<b>NOTED :<b>
+<ol>
+<li>Pemesanan wajib DP.
+<li>Pembatalan pemesanan sepihak dari customer,dp dianggap hangus.</li>
+<li>Bersedia di up di socialmedia.</li>
+<li>Jika jarak >3km tambahan biaya transportasi.</li>
+</ol>`
+  },
+   {
+    id: "SJL11",
+    kode: "SJL11",
+    nama: "Dekorasi Lamaran",
+    kategori: "lamaran",
+    harga: "1500000",
+    img: "asset/sjl11.png",
     deskripsi: `
 <b>NOTED :<b>
 <ol>
@@ -882,25 +1020,42 @@ function renderProducts() {
   if (!target) return;
 
   const list = getFilteredProducts();
+
   if (!list.length) {
     target.innerHTML = "<p>Tidak ada produk.</p>";
     return;
   }
 
   target.innerHTML = list.map(p => `
-    <div class="card">
-      <img src="${p.img}" class="card-img">
-      <div class="card-body">
-        <h4>${escapeHtml(p.nama)}</h4>
-        <p>${escapeHtml(p.kode)}</p>
-        <div class="btn-wrap">
-          <a href="detail.html?id=${p.id}" class="btn btn-primary">Detail</a>
-        </div>
-      </div>
+   <div class="card-body">
+<img src="${p.img}" class="card-img">
+  <h4 class="nama-produk">
+    ${escapeHtml(p.nama)}
+  </h4>
+
+ 
+<div class="harga-produk ${parseHarga(p.harga) === 0 ? 'free-request' : ''}">
+  ${
+    parseHarga(p.harga) > 0
+      ? `Rp ${parseHarga(p.harga).toLocaleString("id-ID")}`
+      : `🎨 Free Request`
+  }
+</div>
+  <div class="bottom-row">
+
+    <a href="detail.html?id=${p.id}" class="btn-detail">
+      Detail
+    </a>
+
+    <div class="kode-produk">
+      ${escapeHtml(p.kode)}
     </div>
+
+  </div>
+
+</div>
   `).join("");
 }
-
 /* ===========================================================
  *  DETAIL PAGE + TANGGAL + LOKASI
  * =========================================================== */
