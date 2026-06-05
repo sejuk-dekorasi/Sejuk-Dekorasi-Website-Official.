@@ -1586,3 +1586,126 @@ main{
   background: #fff;
   color: #000;
 }
+.card{
+  overflow:hidden;
+  border-radius:20px;
+  background:#3b82f6;
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.card-img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  display:block;
+}
+
+.card-body{
+  padding:14px;
+}
+
+.nama-produk{
+  text-align:center;
+  color:#fff;
+  font-size:22px;
+  font-weight:700;
+  margin:0;
+}
+
+.harga-produk{
+  margin:10px 0 14px;
+
+  width:100%; /* selebar card */
+
+  padding:12px;
+
+  border-radius:12px; /* tidak terlalu bulat */
+
+  background:linear-gradient(
+    135deg,
+    #ff4f8b,
+    #ff8c42
+  );
+
+  color:#fff;
+  font-size:18px;
+  font-weight:800;
+
+  box-sizing:border-box;
+}
+
+.bottom-row{
+  display:flex;
+  gap:10px;
+}
+
+.btn-detail{
+  flex:2;
+
+  text-align:center;
+
+  padding:12px;
+
+  border-radius:15px;
+
+  background:#22c55e;
+
+  color:#fff;
+
+  font-weight:700;
+
+  text-decoration:none;
+}
+
+.kode-produk{
+  flex:1;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:15px;
+
+  background:#312e81;
+
+  color:#fff;
+
+  font-weight:700;
+}
+.card{
+  background: linear-gradient(
+    180deg,
+    #4f46e5,
+    #3b82f6
+  );
+
+  border-radius:20px;
+  overflow:hidden;
+
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+  padding:10px;
+}
+
+.card-img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+
+  border-radius:15px; /* sudut gambar melengkung */
+
+  display:block;
+
+  margin-bottom:12px;
+}
+
+.card-body{
+  text-align:center;
+}
+.free-request{
+  background:linear-gradient(
+    135deg,
+    #22c55e,
+    #16a34a
+  ) !important;
+}
