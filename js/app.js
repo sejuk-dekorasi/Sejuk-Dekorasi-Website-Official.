@@ -912,14 +912,30 @@ function getFilteredProducts() {
     (document.getElementById("categoryFilter")?.value || "")
       .toLowerCase();
 
-  return DEFAULT_PRODUCTS.filter(p => {
+  const sort =
+    document.getElementById("sortPrice")?.value || "";
+
+  let hasil = DEFAULT_PRODUCTS.filter(p => {
     const nama = String(p.nama || "").toLowerCase();
     const kode = String(p.kode || "").toLowerCase();
     const kat  = String(p.kategori || "").toLowerCase();
 
-    return (!keyword || nama.includes(keyword) || kode.includes(keyword)) &&
-           (!kategori || kat === kategori);
+    return (
+      (!keyword || nama.includes(keyword) || kode.includes(keyword)) &&
+      (!kategori || kat === kategori)
+    );
   });
+
+  // SORTING HARGA
+  if (sort === "asc") {
+    hasil.sort((a, b) => parseHarga(a.harga) - parseHarga(b.harga));
+  }
+
+  if (sort === "desc") {
+    hasil.sort((a, b) => parseHarga(b.harga) - parseHarga(a.harga));
+  }
+
+  return hasil;
 }
 
 function renderPreview() {
@@ -1101,7 +1117,7 @@ function loadDetail() {
 
       <br><label class="item-box">
         <input type="checkbox" id="backdropCheck">
-        Kain Cover Dinding – Rp 20.000 / meter
+        Kain Cover Backdrop – Rp 20.000 / meter
       </label>
 
       <div id="meterBox" style="display:none">
