@@ -1096,7 +1096,6 @@ function loadDetail() {
   </div>
 </div>
 
-<h2>${escapeHtml(p.nama)}</h2>
     <h2>${escapeHtml(p.nama)}</h2>
 <div class="detail-price ${parseHarga(p.harga) === 0 ? 'free-request' : ''}">
   ${
