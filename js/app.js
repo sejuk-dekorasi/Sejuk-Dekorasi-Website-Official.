@@ -1101,7 +1101,7 @@ function loadDetail() {
 
       <br><label class="item-box">
         <input type="checkbox" id="backdropCheck">
-        Kain Cover Backdrop – Rp 20.000 / meter
+        Kain Cover Dinding – Rp 20.000 / meter
       </label>
 
       <div id="meterBox" style="display:none">
