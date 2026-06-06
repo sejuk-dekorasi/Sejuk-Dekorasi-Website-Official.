@@ -40,19 +40,24 @@
          <option value="aqiqah">Aqiqah</option>
          <option value="akad">Akad Nikah</option>
          <option value="lamaran">Lamaran</option>
-         <option value="acara">Event</option>
+         <option value="acara">Acara</option>
           <option value="khitan">Khitan</option>
         <option value="ultah">Ulang Tahun</option>
         <option value="tasyakuran">Tasyakuran</option>
         <option value="lainnya">Lainnya</option>
       </select>
+      <select id="sortPrice" class="control-select">
+  <option value="">Urutkan Harga</option>
+  <option value="asc">💸 Harga Terendah</option>
+  <option value="desc">💎 Harga Tertinggi</option>
+</select>
 <h1>Produk</h1>
 <div class="quick-category">
   <button data-kat="">Semua</button>
   <button data-kat="pernikahan">💍 Pernikahan</button>
   <button data-kat="akad">🤍 Akad</button>
   <button data-kat="lamaran">💌 Lamaran</button>
-    <button data-kat="acara">✨ Event</button>
+    <button data-kat="acara">✨ Acara</button>
   <button data-kat="ultah">🎉 Ulang Tahun</button>
   <button data-kat="khitan">🧒 Khitan</button>
 </div>
@@ -103,22 +108,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // DOM references
     const searchBox = document.getElementById('searchBox');
-    const categoryFilter = document.getElementById('categoryFilter');
-    const clearBtn = document.getElementById('clearFilters');
-
+const categoryFilter = document.getElementById('categoryFilter');
+const sortPrice = document.getElementById('sortPrice');
+const clearBtn = document.getElementById('clearFilters');
     // bind events
     searchBox.addEventListener('input', ()=> renderProducts());
     categoryFilter.addEventListener('change', ()=> renderProducts());
+    sortPrice.addEventListener('change', () => renderProducts());
 
    clearBtn.addEventListener('click', ()=>{
   searchBox.value = '';
   categoryFilter.value = '';
+  sortPrice.value = '';
 
-  // reset active quick category
   document.querySelectorAll(".quick-category button")
     .forEach(b => b.classList.remove("active"));
 
-  // aktifkan tombol "Semua"
   document.querySelector('.quick-category button[data-kat=""]')
     .classList.add("active");
 
