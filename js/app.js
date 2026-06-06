@@ -660,7 +660,7 @@ di RUMAH<br><br>
     kode: "SJL01",
     nama: "Dekorasi Lamaran",
     kategori: "lamaran",
-    harga: "0",
+    harga: "1000000",
     img: "asset/sjl01.jpeg",
     deskripsi: `
 <b>NOTED :<b>
@@ -676,7 +676,7 @@ di RUMAH<br><br>
     kode: "SJL02",
     nama: "Dekorasi Lamaran",
     kategori: "lamaran",
-    harga: "0",
+    harga: "1000000",
     img: "asset/sjl02.jpeg",
     deskripsi: `
 <b>NOTED :<b>
