@@ -203,12 +203,12 @@ const DEFAULT_PRODUCTS = [
 </ol>`
   },
   {
-    id: "SJ01",
-    kode: "SJ01",
+    id: "SJ02",
+    kode: "SJ02",
     nama: "Dekorasi Pernikahan",
     kategori: "pernikahan",
     harga: "3500000",
-    img: "asset/sj01.png",
+    img: "asset/sj02.png",
     deskripsi: `
 <b>ITEM :</b>
 <ol>
@@ -229,14 +229,20 @@ const DEFAULT_PRODUCTS = [
   <li>Karpet pelaminan</li>
   <li>Kain cover meja kado</li>
 </ol>
+<b>NOTED :<b>
+<ol>
+<li>Pemesanan wajib DP.
+<li>Pembatalan pemesanan sepihak dari customer,dp dianggap hangus.</li>
+<li>Bersedia di up di socialmedia.</li>
+</ol>`
   },
   {
-    id: "SJ02",
-    kode: "SJ02",
+    id: "SJ01",
+    kode: "SJ01",
     nama: "Dekorasi Pernikahan",
     kategori: "pernikahan",
     harga: "3500000",
-    img: "asset/sj02.png",
+    img: "asset/sj01.png",
     deskripsi: `
 <b>ITEM :</b>
 <ol>
