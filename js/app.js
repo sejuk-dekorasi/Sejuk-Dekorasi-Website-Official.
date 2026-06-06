@@ -1070,6 +1070,13 @@ function loadDetail() {
   target.innerHTML = `
     <img src="${p.img}" class="detail-img">
     <h2>${escapeHtml(p.nama)}</h2>
+<div class="detail-price ${parseHarga(p.harga) === 0 ? 'free-request' : ''}">
+  ${
+    parseHarga(p.harga) > 0
+      ? `Rp ${parseHarga(p.harga).toLocaleString("id-ID")}`
+      : `🎨 Free Request`
+  }
+</div>
 
     <div class="deskripsi-produk">${p.deskripsi}</div>
 
