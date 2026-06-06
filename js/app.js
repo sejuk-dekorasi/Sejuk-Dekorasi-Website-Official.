@@ -830,9 +830,9 @@ const DEFAULT_PRODUCTS = [
   {
     id: "SJA01",
     kode: "SJA01",
-    nama: "Dekorasi Acara",
+    nama: "Dekorasi Acara (Termasuk MMT)",
     kategori: "acara",
-    harga: "0",
+    harga: "1000000",
     img: "asset/sja01.jpeg",
     deskripsi: `
 <b>NOTED :<b>
@@ -848,7 +848,7 @@ const DEFAULT_PRODUCTS = [
     kode: "SJA02",
     nama: "Dekorasi Acara",
     kategori: "acara",
-    harga: "0",
+    harga: "800000",
     img: "asset/sja02.jpeg",
     deskripsi: `
 <b>NOTED :<b>
@@ -862,9 +862,9 @@ const DEFAULT_PRODUCTS = [
   {
     id: "SJA03",
     kode: "SJA03",
-    nama: "Dekorasi Acara",
+    nama: "Dekorasi Acara (Termasuk MMT)",
     kategori: "acara",
-    harga: "0",
+    harga: "600000",
     img: "asset/sja03.jpeg",
     deskripsi: `
 <b>NOTED :<b>
@@ -878,9 +878,9 @@ const DEFAULT_PRODUCTS = [
   {
     id: "SJA04",
     kode: "SJA04",
-    nama: "Dekorasi Acara",
+    nama: "Dekorasi Acara (Termasuk MMT)",
     kategori: "acara",
-    harga: "0",
+    harga: "1000000",
     img: "asset/sja04.jpeg",
     deskripsi: `
 <b>NOTED :<b>
