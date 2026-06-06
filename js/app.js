@@ -1084,7 +1084,6 @@ function loadDetail() {
   if (!p) return;
 
   target.innerHTML = `
-    <img src="${p.img}" class="detail-img">
     <img src="${p.img}" class="detail-img" id="gambarProduk">
 
 <div class="download-section">
