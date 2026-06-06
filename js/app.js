@@ -1085,6 +1085,19 @@ function loadDetail() {
 
   target.innerHTML = `
     <img src="${p.img}" class="detail-img">
+    <img src="${p.img}" class="detail-img" id="gambarProduk">
+
+<div class="download-section">
+  <a href="${p.img}" download="${p.kode}.jpg" class="btn-download">
+    📥 Unduh Gambar
+  </a>
+
+  <div class="download-note">
+    * Tunjukkan gambar ini ke admin saat melakukan pemesanan
+  </div>
+</div>
+
+<h2>${escapeHtml(p.nama)}</h2>
     <h2>${escapeHtml(p.nama)}</h2>
 <div class="detail-price ${parseHarga(p.harga) === 0 ? 'free-request' : ''}">
   ${
