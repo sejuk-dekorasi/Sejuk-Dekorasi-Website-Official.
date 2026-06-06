@@ -203,12 +203,12 @@ const DEFAULT_PRODUCTS = [
 </ol>`
   },
   {
-    id: "SJ02",
-    kode: "SJ02",
+    id: "SJ01",
+    kode: "SJ01",
     nama: "Dekorasi Pernikahan",
     kategori: "pernikahan",
     harga: "3500000",
-    img: "asset/sj02.png",
+    img: "asset/sj01.png",
     deskripsi: `
 <b>ITEM :</b>
 <ol>
@@ -229,7 +229,7 @@ const DEFAULT_PRODUCTS = [
   <li>Karpet pelaminan</li>
   <li>Kain cover meja kado</li>
 </ol>
-<b>NOTED :<b>
+
 <ol>
 <li>Pemesanan wajib DP.
 <li>Pembatalan pemesanan sepihak dari customer,dp dianggap hangus.</li>
@@ -237,12 +237,12 @@ const DEFAULT_PRODUCTS = [
 </ol>`
   },
   {
-    id: "SJ01",
-    kode: "SJ01",
+    id: "SJ02",
+    kode: "SJ02",
     nama: "Dekorasi Pernikahan",
     kategori: "pernikahan",
     harga: "3500000",
-    img: "asset/sj01.png",
+    img: "asset/sj02.png",
     deskripsi: `
 <b>ITEM :</b>
 <ol>
@@ -1079,6 +1079,7 @@ function loadDetail() {
   if (!p) return;
 
   target.innerHTML = `
+    <img src="${p.img}" class="detail-img">
     <img src="${p.img}" class="detail-img" id="gambarProduk">
 
 <div class="download-section">
@@ -1091,6 +1092,7 @@ function loadDetail() {
   </div>
 </div>
 
+<h2>${escapeHtml(p.nama)}</h2>
     <h2>${escapeHtml(p.nama)}</h2>
 <div class="detail-price ${parseHarga(p.harga) === 0 ? 'free-request' : ''}">
   ${
