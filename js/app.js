@@ -229,17 +229,6 @@ const DEFAULT_PRODUCTS = [
   <li>Karpet pelaminan</li>
   <li>Kain cover meja kado</li>
 </ol>
-
-<b>DEKORASI MODERN</b><br>
-<b>Price List :</b><br>
-Dekorasi Akad + Resepsi<br>
-di RUMAH<br><br>
-<b>NOTED :<b>
-<ol>
-<li>Pemesanan wajib DP.
-<li>Pembatalan pemesanan sepihak dari customer,dp dianggap hangus.</li>
-<li>Bersedia di up di socialmedia.</li>
-</ol>`
   },
   {
     id: "SJ02",
